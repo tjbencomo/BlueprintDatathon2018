@@ -2,7 +2,7 @@
 import pandas
 import seaborn
 
-def load_data():
+def loadData():
     chrData = []
     year = 2014
     for i in xrange(4):
@@ -25,11 +25,9 @@ def genCorrelation(dataframe, searchToken=""):
 def plotCorrelation(dataframe, searchToken=""):
     seaborn.heatmap(genCorrelation(dataframe, searchToken))
 
-chrAgg = pandas.read_csv("aggregated_v2.csv", thousands=",")
-
-corr = genCorrelation(chrAgg, "value")
-
-for i in xrange(len(corr["drug.overdose.deaths.value_2017"])):
-    val = corr["drug.overdose.deaths.value_2017"][i]
-    if abs(val) > 0.3:
-        print str(val) + "\t\t" + list(corr.index)[i]
+def printCorrelations(dataframe, targetCol, threshold):
+    corr = genCorrelation(dataframe, "value")
+    for i in xrange(len(corr[targetCol])):
+        val = corr[targetCol][i]
+        if abs(val) > threshold:
+            print str(val) + "\t\t" + list(corr.index)[i]
