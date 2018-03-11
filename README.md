@@ -5,7 +5,9 @@ work in identifying causes and remediation strategies for drug overdoses.
 
 ## Notes
 Python Version: `python-2.7`
+
 Dependencies: `csv`, `pandas`, `math`, `seaborn`, `scipy`
+
 Modules Structure:
 ```
 customLib
