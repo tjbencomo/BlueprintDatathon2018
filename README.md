@@ -39,9 +39,7 @@ coefficient and the column name separated by a tab (`\t`)
 
 ### Linear Regression Modeling
 
-### Model Prediction Testing
-
-#### Thingy Tomas Did
+To better understand the key factors underlying the drug deaths per county, we built a linear regression model to predict drug deaths in the future given certain information about a county. This regression model, using ordinary least regression, was trained on a subset of features from the CHS dataset. We tried predicting drug overdose deaths in 2017 by county based on county information from previous years. A full list of features can be found in the script output in linear-regression.py in our github. To train the model, we split our data into 60% train data and 40% test data. From there we ran the model with the cross validation algorithm with k = 10. This model was then tested on the 40% test data, and achieved a mean squared error score of 9.09. The r squared value for our model was .8699. We then analyzed the coefficients for each feature from our model, which provided more insight into exactly which features play a key role in drug deaths.
 
 #### Statistical Analysis of Results
 Write the model's prediction for each county in the testing data to a text file
@@ -55,16 +53,6 @@ for the script `testModel.py` to work. This script performs the following:
   * p-value from Independent T-Test on predicted and actual data
 * Displays a scatter plot of actual versus predicted results (may only work
   when script is run in `spyder`)
-
-## Model Results
-
-
-## Interpretation of Model
-
-## Validity of Model
-
-## Conclusions
-
 
 ## License
 
