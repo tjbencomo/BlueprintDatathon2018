@@ -92,6 +92,19 @@ def loadData():
     data.append(loadCSV("data/2017CHR_CSV_Analytic_Data.csv"))
     return data
 
+# Returns list of strings in the form: stateCode:countyCode
+def getCountyIDs(data, stateIndex, countyIndex):
+    ids = []
+    for i in xrange(len(data)):
+        ids.append(str(int(data[i][stateIndex])) + ":" + str(int(data[i][countyIndex])))
+    return ids
+
+def makeCountyLists(data):
+    writeListToFile("2014counties", getCountyIDs(data[0][1:], 0, 1))
+    writeListToFile("2015counties", getCountyIDs(data[1][1:], 0, 1))
+    writeListToFile("2016counties", getCountyIDs(data[2][1:], 0, 1))
+    writeListToFile("2017counties", getCountyIDs(data[3][1:], 1, 2))
+
 data = loadData()
 
 #writeListToFile("columnNames.txt", getLabels(loadCSV("2017CHR_CSV_Analytic_Data_v2.csv"), rowIndex = 0))
