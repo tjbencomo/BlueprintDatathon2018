@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import pandas
 import numpy
+import seaborn
 
 def loadData():
     chrData = []
@@ -25,12 +26,20 @@ interestingCols = ["uninsured.value", "primary.care.physicians.value",
 
 valueNames = []
 
-with open ("valueNames.txt", 'r') as f:
+with open ("2017valueNames.txt", 'r') as f:
     for line in f:
         valueNames.append(line[:-1])
 
 chr2017.fillna(0)
 numericCols = chr2017.select_dtypes(include=[numpy.number])
 
-for col in valueNames:
-    chr2017.plot(y="drug.overdose.deaths.value", x=col, kind="scatter")
+def makeGraphs(dataframe, colNames, yCol):
+    for col in colNames:
+        dataframe.plot(y=yCol, x=col, kind="scatter")
+
+def plotCorrelation(dataframe, searchToken = ""):
+    values = [col for col in dataframe.columns if searchToken in col]
+    correlation = dataframe.filter(values).corr()
+    seaborn.heatmap(correlation)
+
+plotCorrelation(chr2017, "value")
