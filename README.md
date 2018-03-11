@@ -56,6 +56,9 @@ for the script `testModel.py` to work. This script performs the following:
 * Displays a scatter plot of actual versus predicted results (may only work
   when script is run in `spyder`)
 
+## Model Results
+
+
 ## Interpretation of Model
 
 ## Validity of Model
