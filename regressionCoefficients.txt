@@ -1,0 +1,61 @@
+-4.997713                      adult.smoking.value_2014
+ 4.900714                      adult.smoking.value_2015
+ 18.995631                     adult.smoking.value_2016
+ 7.087400                      adult.smoking.value_2017
+ 5.574320                children.in.poverty.value_2017
+-12.941094                          diabetes.value_2014
+ 1.995252                           diabetes.value_2015
+ 27.655930                          diabetes.value_2016
+-13.447126                          diabetes.value_2017
+ 0.787092               drug.overdose.deaths.value_2016
+ 0.218909              drug.poisoning.deaths.value_2014
+-0.040268              drug.poisoning.deaths.value_2015
+-13.734152                excessive.drinking.value_2016
+ 5.786814                 excessive.drinking.value_2017
+-0.137874                 firearm.fatalities.value_2017
+ 23.693746          frequent.mental.distress.value_2017
+-23.657259        frequent.physical.distress.value_2017
+-0.011988                      injury.deaths.value_2014
+-0.018334                      injury.deaths.value_2015
+-0.210435                      injury.deaths.value_2016
+ 0.293009                      injury.deaths.value_2017
+ 1.478869              mammography.screening.value_2014
+-3.612762              mammography.screening.value_2015
+-0.000015            median.household.income.value_2016
+ 0.000061            median.household.income.value_2017
+-0.022328         motor.vehicle.crash.deaths.value_2014
+ 0.081915         motor.vehicle.crash.deaths.value_2015
+ 0.048181         motor.vehicle.crash.deaths.value_2016
+-0.192828         motor.vehicle.crash.deaths.value_2017
+ 2.278763                physical.inactivity.value_2014
+-2.878222                physical.inactivity.value_2015
+ 4.450888                physical.inactivity.value_2016
+-1.487254                physical.inactivity.value_2017
+-0.226336            poor.mental.health.days.value_2014
+ 0.576440            poor.mental.health.days.value_2015
+ 1.770097            poor.mental.health.days.value_2016
+-0.106960            poor.mental.health.days.value_2017
+-5.400442                poor.or.fair.health.value_2014
+ 3.639368                poor.or.fair.health.value_2015
+ 1.143354                poor.or.fair.health.value_2016
+-0.346638          poor.physical.health.days.value_2014
+ 0.489161          poor.physical.health.days.value_2015
+-2.806896          poor.physical.health.days.value_2016
+ 0.581292          poor.physical.health.days.value_2017
+ 0.005340   premature.age.adjusted.mortality.value_2014
+ 0.005957   premature.age.adjusted.mortality.value_2015
+-0.016561   premature.age.adjusted.mortality.value_2016
+ 0.014585   premature.age.adjusted.mortality.value_2017
+ 0.000194                    premature.death.value_2014
+-0.000658                    premature.death.value_2015
+ 0.000667                    premature.death.value_2016
+-0.000801                    premature.death.value_2017
+-0.013937         preventable.hospital.stays.value_2014
+ 0.004249         preventable.hospital.stays.value_2015
+-0.036040         preventable.hospital.stays.value_2016
+ 0.054993         preventable.hospital.stays.value_2017
+-1.667989                       some.college.value_2014
+ 2.512655                       some.college.value_2015
+-2.923692                       some.college.value_2016
+ 1.297759                       some.college.value_2017
+ 2.203110                       unemployment.value_2017
