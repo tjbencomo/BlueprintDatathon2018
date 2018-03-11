@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import pandas
 import seaborn
 
@@ -10,7 +9,6 @@ def loadData():
 
     for i in xrange(4):
         chrData[i].rename(columns=lambda x: x.lower(), inplace=True)
-
     return chrData
 
 def makeGraphs(dataframe, colNames, yCol):
