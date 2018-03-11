@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import pandas
-import numpy
 import seaborn
 
 def loadData():
