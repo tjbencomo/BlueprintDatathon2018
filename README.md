@@ -43,7 +43,7 @@ To better understand the key factors underlying the drug deaths per county, we b
 
 #### Statistical Analysis of Results
 Write the model's prediction for each county in the testing data to a text file
-with one prediction per line. **HOW DO YOU DO THIS** Repeat for the actual
+with one prediction per line. Repeat for the actual
 testing data. These files should be `results/actual.txt` and `results/predicted.txt`
 for the script `testModel.py` to work. This script performs the following:
 * Computes the following statistics:
