@@ -37,9 +37,22 @@ def makeGraphs(dataframe, colNames, yCol):
     for col in colNames:
         dataframe.plot(y=yCol, x=col, kind="scatter")
 
-def plotCorrelation(dataframe, searchToken = ""):
+def genCorrelation(dataframe, searchToken=""):
     values = [col for col in dataframe.columns if searchToken in col]
     correlation = dataframe.filter(values).corr()
-    seaborn.heatmap(correlation)
+    return correlation
 
-plotCorrelation(chr2017, "value")
+def plotCorrelation(dataframe, searchToken = ""):
+    seaborn.heatmap(genCorrelation(dataframe, searchToken))
+    
+chrAgg = pandas.read_csv("aggregated.csv", thousands=",")
+
+corr = genCorrelation(chrAgg, "value")
+
+count = 0
+for i in xrange(len(corr["drug.overdose.deaths.value_2017"])):
+    val = corr["drug.overdose.deaths.value_2017"][i]
+    count = count + 1
+    if abs(val) > 0.2:
+        print list(corr.index)[i] + "\t\t" + str(val)
+print count
